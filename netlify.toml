@@ -11,3 +11,9 @@
   for = "/*"
   [headers.values]
     Content-Security-Policy = "upgrade-insecure-requests"
+
+[[redirects]]
+  from = "/proxy-hf/*"
+  to = "https://huggingface.co/:splat"
+  status = 200
+  force = true
